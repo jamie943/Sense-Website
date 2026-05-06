@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sense Recruitment | Jamie Roostan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --sense-blue: #0055ff;
+            --deep-blue: #002266;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* The Textured Logo Effect */
+        .logo-text {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0070f3 0%, #000046 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            letter-spacing: -2px;
+        }
+
+        header {
+            padding: 40px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 300;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--sense-blue); }
+
+        .hero {
+            padding: 100px 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: -10px;
+            color: #ccc;
+        }
+
+        .hero-h1 {
+            font-size: 3.5rem;
+            max-width: 800px;
+            margin: 40px 0;
+            line-height: 1.2;
+        }
+
+        .blue-line {
+            width: 2px;
+            height: 100px;
+            background: var(--sense-blue);
+            margin: 20px 0;
+        }
+
+        .section {
+            padding: 80px 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .card {
+            background: #0a0a0a;
+            padding: 40px;
+            border: 1px solid #1a1a1a;
+            border-radius: 4px;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            border-color: var(--sense-blue);
+            transform: translateY(-5px);
+        }
+
+        .accent-text {
+            color: var(--sense-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+
+        .cta-button {
+            background: var(--sense-blue);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            font-weight: 600;
+            border-radius: 2px;
+        }
+
+        footer {
+            padding: 60px 10%;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="logo-text">sense</div>
+            <div class="tagline">Where hiring makes Sense.</div>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">About Jamie</a>
+            <a href="#services">Partnership</a>
+            <a href="mailto:jamie@senserec.com">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="blue-line"></div>
+        <p class="accent-text">Founder: Jamie Roostan</p>
+        <h1 class="hero-h1">I match human ambition to company culture through <span style="color: var(--sense-blue)">intuition</span> and technical depth.</h1>
+        <a href="mailto:jamie@senserec.com" class="cta-button">Let's Build Your Team</a>
+    </section>
+
+    <section id="about" class="section" style="background: #050505;">
+        <div class="grid">
+            <div>
+                <h2 style="font-size: 2.5rem;">The Human Behind the Search</h2>
+                <p>I’ve built my career through instinct, hard work, and people skills rather than traditional academic routes. That is my superpower. I understand tech—Cloud, Data, AI, and DevOps—but more importantly, I understand <strong>people</strong>.</p>
+                <p>I don’t just throw CVs at growth-stage startups. I act as a consultant and talent partner, finding the neurodiverse thinkers and cultural pioneers that others miss.</p>
+            </div>
+            <div class="card">
+                <p class="accent-text">Mission</p>
+                <h3>Tech for Good & Diversity</h3>
+                <p>As a co-founder of <b>DigiGals</b> and an advocate for neurodiversity, I am committed to making the tech industry feel more human, accessible, and fair for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2 style="text-align: center; margin-bottom: 50px;">A Partnership that makes Sense.</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Technical Precision</h3>
+                <p>Deep vetting for Cloud, AI, and Software Engineering roles. I speak the language so you don't have to spend hours filtering through technical fluff.</p>
+            </div>
+            <div class="card">
+                <h3>High-EQ Matching</h3>
+                <p>Using emotional intelligence to ensure the candidate doesn't just fit the job description, but the heartbeat of the team.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Sense Recruitment &copy; 2024 | Jamie Roostan | 07548 624 066 | jamie@senserec.com</p>
+    </footer>
+
+</body>
+</html>
